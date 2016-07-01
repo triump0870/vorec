@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7D13E3E81D170B9900E550C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E3E71D170B9900E550C8 /* AppDelegate.swift */; };
-		7D13E3EA1D170B9900E550C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E3E91D170B9900E550C8 /* ViewController.swift */; };
+		7D13E3EA1D170B9900E550C8 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E3E91D170B9900E550C8 /* RecordSoundsViewController.swift */; };
 		7D13E3ED1D170B9900E550C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D13E3EB1D170B9900E550C8 /* Main.storyboard */; };
 		7D13E3EF1D170B9900E550C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D13E3EE1D170B9900E550C8 /* Assets.xcassets */; };
 		7D13E3F21D170B9900E550C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D13E3F01D170B9900E550C8 /* LaunchScreen.storyboard */; };
 		7D13E3FD1D170B9900E550C8 /* VorecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E3FC1D170B9900E550C8 /* VorecTests.swift */; };
 		7D13E4081D170B9A00E550C8 /* VorecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E4071D170B9A00E550C8 /* VorecUITests.swift */; };
+		7DA097741D253CE900A88A71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA097731D253CE900A88A71 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7DA097761D2544A600A88A71 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA097751D2544A600A88A71 /* PlaySoundsViewController.swift */; };
+		7DA097781D2655B500A88A71 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA097771D2655B500A88A71 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		7D13E3E41D170B9900E550C8 /* Vorec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vorec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D13E3E71D170B9900E550C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D13E3E91D170B9900E550C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D13E3E91D170B9900E550C8 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		7D13E3EC1D170B9900E550C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D13E3EE1D170B9900E550C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D13E3F11D170B9900E550C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		7D13E4031D170B9A00E550C8 /* VorecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VorecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D13E4071D170B9A00E550C8 /* VorecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorecUITests.swift; sourceTree = "<group>"; };
 		7D13E4091D170B9A00E550C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DA097731D253CE900A88A71 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7DA097751D2544A600A88A71 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		7DA097771D2655B500A88A71 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA097741D253CE900A88A71 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		7D13E3DB1D170B9900E550C8 = {
 			isa = PBXGroup;
 			children = (
+				7DA097731D253CE900A88A71 /* AVFoundation.framework */,
 				7D13E3E61D170B9900E550C8 /* Vorec */,
 				7D13E3FB1D170B9900E550C8 /* VorecTests */,
 				7D13E4061D170B9A00E550C8 /* VorecUITests */,
@@ -98,7 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				7D13E3E71D170B9900E550C8 /* AppDelegate.swift */,
-				7D13E3E91D170B9900E550C8 /* ViewController.swift */,
+				7DA097751D2544A600A88A71 /* PlaySoundsViewController.swift */,
+				7D13E3E91D170B9900E550C8 /* RecordSoundsViewController.swift */,
+				7DA097771D2655B500A88A71 /* PlaySoundsViewController+Audio.swift */,
 				7D13E3EB1D170B9900E550C8 /* Main.storyboard */,
 				7D13E3EE1D170B9900E550C8 /* Assets.xcassets */,
 				7D13E3F01D170B9900E550C8 /* LaunchScreen.storyboard */,
@@ -257,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D13E3EA1D170B9900E550C8 /* ViewController.swift in Sources */,
+				7D13E3EA1D170B9900E550C8 /* RecordSoundsViewController.swift in Sources */,
+				7DA097781D2655B500A88A71 /* PlaySoundsViewController+Audio.swift in Sources */,
+				7DA097761D2544A600A88A71 /* PlaySoundsViewController.swift in Sources */,
 				7D13E3E81D170B9900E550C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
