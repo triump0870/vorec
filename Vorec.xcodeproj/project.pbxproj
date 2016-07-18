@@ -13,6 +13,7 @@
 		7D13E3EF1D170B9900E550C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D13E3EE1D170B9900E550C8 /* Assets.xcassets */; };
 		7D13E3FD1D170B9900E550C8 /* VorecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E3FC1D170B9900E550C8 /* VorecTests.swift */; };
 		7D13E4081D170B9A00E550C8 /* VorecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E4071D170B9A00E550C8 /* VorecUITests.swift */; };
+		7D79E0181D3CBD6000BA5422 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7D79E0171D3CBD6000BA5422 /* .gitignore */; };
 		7DA097761D2544A600A88A71 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA097751D2544A600A88A71 /* PlaySoundsViewController.swift */; };
 		7DA097781D2655B500A88A71 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA097771D2655B500A88A71 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		7D13E4031D170B9A00E550C8 /* VorecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VorecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D13E4071D170B9A00E550C8 /* VorecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorecUITests.swift; sourceTree = "<group>"; };
 		7D13E4091D170B9A00E550C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D79E0171D3CBD6000BA5422 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7DA097751D2544A600A88A71 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		7DA097771D2655B500A88A71 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 		7D13E3DB1D170B9900E550C8 = {
 			isa = PBXGroup;
 			children = (
+				7D79E0171D3CBD6000BA5422 /* .gitignore */,
 				7D13E3E61D170B9900E550C8 /* Vorec */,
 				7D13E3FB1D170B9900E550C8 /* VorecTests */,
 				7D13E4061D170B9A00E550C8 /* VorecUITests */,
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D13E3EF1D170B9900E550C8 /* Assets.xcassets in Resources */,
+				7D79E0181D3CBD6000BA5422 /* .gitignore in Resources */,
 				7D13E3ED1D170B9900E550C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
