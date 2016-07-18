@@ -31,7 +31,6 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate {
 
     
     @IBAction func recordAudio(sender: UIButton) {
-        print("Record button pressed")
         stopRecordingButton.enabled = true
         recordButton.enabled = false
         recordingLabel.text = "Recording in Progress..."
@@ -44,7 +43,7 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate {
         print(filePath)
         
         let audioSession = AVAudioSession.sharedInstance()
-        try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions:AVAudioSessionCategoryOptions.DefaultToSpeaker)
         
         try! audioRecorder = AVAudioRecorder(URL: filePath!, settings:[:])
         audioRecorder.delegate = self
@@ -54,7 +53,6 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate {
     }
     
     @IBAction func stopRecording(sender: AnyObject) {
-        print("Recording stopped")
         stopRecordingButton.enabled = false
         recordButton.enabled = true
         recordingLabel.text = "Tap to Record"
@@ -66,12 +64,10 @@ class RecordSoundsViewController: UIViewController , AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        print("view appeared")
         stopRecordingButton.enabled = false
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
-        print("AVAudiorecorder finished saving recording")
         if(flag){
             self.performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
         }

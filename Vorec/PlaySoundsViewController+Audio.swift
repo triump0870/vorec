@@ -34,7 +34,6 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         } catch {
             showAlert(Alerts.AudioFileError, message: String(error))
         }
-        print("Audio has been setup")
     }
     
     func playSound(rate rate: Float? = nil, pitch: Float? = nil, echo: Bool = false, reverb: Bool = false) {
@@ -107,6 +106,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         // play the recording!
         audioPlayerNode.play()
+        audioPlayerNode.volume = 0.8
     }
     
     
@@ -115,6 +115,8 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
     func connectAudioNodes(nodes: AVAudioNode...) {
         for x in 0..<nodes.count-1 {
             audioEngine.connect(nodes[x], to: nodes[x+1], format: audioFile.processingFormat)
+            audioEngine.mainMixerNode.volume = 0.8
+
         }
     }
     
